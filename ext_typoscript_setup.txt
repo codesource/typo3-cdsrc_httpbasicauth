@@ -1,0 +1,11 @@
+
+# ==============================================
+# Persistence object mapping configuration
+# ==============================================
+config.tx_extbase.persistence.classes {
+	CDSRC\CdsrcHttpbasicauth\Domain\Model\Access {
+		mapping {
+			tableName = tx_cdsrchttpbasicauth_domain_model_access
+		}
+	}
+}

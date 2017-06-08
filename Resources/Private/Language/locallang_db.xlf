@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2015-10-28T11:48:25Z" product-name="cdsrc_httpbasicauth">
+        <header/>
+        <body>
+			<trans-unit id="tx_cdsrchttpbasicauth_domain_model_access" xml:space="preserve">
+				<source>Access</source>
+			</trans-unit>
+			<trans-unit id="tx_cdsrchttpbasicauth_domain_model_access.name" xml:space="preserve">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_cdsrchttpbasicauth_domain_model_access.username" xml:space="preserve">
+				<source>Username</source>
+			</trans-unit>
+			<trans-unit id="tx_cdsrchttpbasicauth_domain_model_access.password" xml:space="preserve">
+				<source>Password</source>
+			</trans-unit>
+			<trans-unit id="tx_cdsrchttpbasicauth_domain_model_access.message" xml:space="preserve">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="tx_cdsrchttpbasicauth_domain_model_access.allowAccessToEverybody" xml:space="preserve">
+				<source>Allow access to everybody</source>
+			</trans-unit>
+			<trans-unit id="tx_cdsrchttpbasicauth_domain_model_access.allowPropagation" xml:space="preserve">
+				<source>Allow access propagation</source>
+			</trans-unit>
+        </body>
+    </file>
+</xliff>
