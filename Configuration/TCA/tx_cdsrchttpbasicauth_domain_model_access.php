@@ -27,13 +27,13 @@ return [
     'types' => [
         '0' => [
             'showitem' => '
-                    hidden, name, 
+                    name, 
 					--palette--;;paletteData,
 					message,
 					allow_access_to_everybody,
 					allow_propagation,
-				--div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access,
-					--palette--;LLL:EXT:cms/locallang_ttc.xlf:palette.access;paletteAccess',
+				    --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access,
+					--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.access;paletteAccess',
         ],
     ],
     'palettes' => [
@@ -42,8 +42,9 @@ return [
             'canNotCollapse' => true,
         ],
         'paletteAccess' => [
-            'showitem' => 'starttime;LLL:EXT:cms/locallang_ttc.xlf:starttime_formlabel,
-                           endtime;LLL:EXT:cms/locallang_ttc.xlf:endtime_formlabel',
+            'showitem' => 'hidden, --linebreak--,
+                           starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.starttime_formlabel, 
+                           endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.endtime_formlabel',
             'canNotCollapse' => true,
         ],
     ],
@@ -58,6 +59,7 @@ return [
             'label' => 'crdate',
             'config' => [
                 'type' => 'input',
+                'renderType' => 'inputDateTime',
                 'readOnly' => 1,
                 'eval' => 'datetime',
             ],
@@ -85,8 +87,8 @@ return [
             'label' => 'LLL:EXT:cms/locallang_ttc.xlf:starttime_formlabel',
             'config' => [
                 'type' => 'input',
+                'renderType' => 'inputDateTime',
                 'size' => 8,
-                'max' => 20,
                 'eval' => 'datetime',
                 'default' => 0,
             ],
@@ -95,8 +97,8 @@ return [
             'label' => 'LLL:EXT:cms/locallang_ttc.xlf:endtime_formlabel',
             'config' => [
                 'type' => 'input',
+                'renderType' => 'inputDateTime',
                 'size' => 8,
-                'max' => 20,
                 'eval' => 'datetime',
                 'default' => 0,
             ],
