@@ -1,0 +1,25 @@
+{
+  "name": "typo3-ter/cdsrc-httpbasicauth",
+  "type": "typo3-cms-extension",
+  "description": "Allow to configure HTTP Basic Access Authentication on some pages. Useful for website in development.",
+  "authors": [
+    {
+      "name": "Matthias Toscanelli",
+      "email": "m.toscanelli@code-source.ch",
+      "company": "Code-Source",
+      "username": "mtoscanelli"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": ">= 7.6.0, <= 8.7.99"
+  },
+  "autoload": {
+    "psr-4": {
+      "CDSRC\\CdsrcHttpbasicauth\\": "Classes"
+    }
+  },
+  "replace": {
+    "cdsrc_httpbasicauth": "self.version",
+    "typo3-ter/cdsrc_httpbasicauth": "self.version"
+  }
+}
